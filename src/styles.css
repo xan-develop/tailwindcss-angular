@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@layer components{
+  .card{
+    @apply bg-red-500 w-full h-40 grid place-content-center rounded-lg
+    text-white font-bold border-2 border-red-600 text-4xl dark:bg-slate-500;
+  }
+body{
+  @apply dark:bg-slate-950 dark:text-white
+}
+}
